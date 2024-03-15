@@ -84,6 +84,11 @@ public final class Constants {
     // autonomous
     public static final double autoSpeed = 0.5; // change accordingly
 
+    // Makenzie 3/14/2024
+    // Shooter Constants
+    public static final int shootMotor1ID = 1; // CHANGE ACCORDINGLY
+    public static final int shootMotor2ID = 7; // CHANGE ACCORDINGLY
+
 
 public static final String Intake = null;
 }
