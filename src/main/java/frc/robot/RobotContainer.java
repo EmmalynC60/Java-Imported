@@ -104,6 +104,16 @@ public class RobotContainer {
     // An example command will be run in autonomous
     return m_drivetrain.autoCommand(.5).withTimeout(4);
   } */
+// Emmalyn 01/02/2026
+  /**
+   * Clears all sticky faults on motor controllers. Will be called during intialization of the robot.
+   */
+  public void clearAllStickyFaults() {
+    m_drivetrain.clearStickyFaults(); // Drive train motor controllers
+    m_launcher.clearStickyFaults(); // Launcher motor controllers
+    m_amp.clearStickyFaults(); // Amp motor controllers
+    m_intake.clearStickyFaults(); // Intake motor controllers
+  }
 }
 
 

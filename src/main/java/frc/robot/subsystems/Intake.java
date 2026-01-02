@@ -271,6 +271,13 @@ public class Intake extends SubsystemBase {
     return Math.abs(getPivotAngleDegrees() - pivotTargetToAngle(m_periodicIO.pivot_target)) < 5;
   }
    */
+// Emmalyn 01/02/2026
+  /**
+   * Clears sticky faults on the intake pivot motor controller.
+   */
+  public void clearStickyFaults() {
+    mPivotMotor.clearStickyFaults(); // Pivot Motor
+  }
 }
 
 

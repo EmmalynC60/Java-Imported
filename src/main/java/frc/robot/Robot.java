@@ -28,6 +28,9 @@ public class Robot extends TimedRobot {
     // Instantiate our RobotContainer.  This will perform all our button bindings, and put our
     // autonomous chooser on the dashboard.
     m_robotContainer = new RobotContainer();
+    // Emmalyn 01/02/2026
+    // Created 1-2-2026; this will clear all sticky faults on motor controllers and other devices to prevent issues
+    m_robotContainer.clearAllStickyFaults();
   }
 
   /**

@@ -123,6 +123,16 @@ public class Drivetrain extends SubsystemBase {
      * loop such as processing sensor data. Our drivetrain is simple so we don't have anything to put here */
     //odometry.update(pigeon.getRotation2d(), getDistanceMeters(true), getDistanceMeters(false));
   }
+// Emmalyn 01/02/2026
+  /**
+   * Clears sticky faults on all drivetrain motor controllers.
+   */
+  public void clearStickyFaults() {
+    leftFront.clearStickyFaults(); // Left front motor controller
+    leftRear.clearStickyFaults(); // Left rear motor controller
+    rightFront.clearStickyFaults(); // Right front motor controller
+    rightRear.clearStickyFaults(); // Right rear motor controller
+  }
 }
 
   //   @Override

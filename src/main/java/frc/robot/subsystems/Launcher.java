@@ -68,6 +68,14 @@ public class Launcher extends SubsystemBase {
     m_launchWheel.set(TalonSRXControlMode.PercentOutput, 0);
     m_feedWheel.set(TalonSRXControlMode.PercentOutput, 0);
   }
+// Emmalyn 01/02/2026
+  /**
+   * Clears sticky faults on all launcher motor controllers.
+   */
+  public void clearStickyFaults() {
+    m_launchWheel.clearStickyFaults(); // Launch Wheel
+    m_feedWheel.clearStickyFaults(); // Feed Wheel
+  }
 }
 
 

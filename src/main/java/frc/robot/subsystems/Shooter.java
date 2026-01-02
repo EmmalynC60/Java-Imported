@@ -41,4 +41,13 @@ public Command shootCommand(double power) {
     shootMotor2.set(0);
   }
 
+  // Emmalyn 01/02/2026
+  /**
+   * Clears sticky faults on all shooter motor controllers.
+   */
+  public void clearStickyFaults() {
+    shootMotor1.clearStickyFaults(); // S1
+    shootMotor2.clearStickyFaults(); // S2
+  }
+
 }

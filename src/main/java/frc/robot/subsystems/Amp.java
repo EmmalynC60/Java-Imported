@@ -27,6 +27,13 @@ public class Amp extends SubsystemBase {
   public void setSpeed(double output) {
     m_ampMotor.set(TalonSRXControlMode.PercentOutput, output);
   }
+  // Emmalyn 01/02/2026
+  /**
+   * Clears sticky faults on the amp motor controller.
+   */
+  public void clearStickyFaults() {
+    m_ampMotor.clearStickyFaults(); // Amp motor
+  }
   
   @Override
   public void periodic() {
